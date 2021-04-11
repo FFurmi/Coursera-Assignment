@@ -1,0 +1,109 @@
+:root{
+    --clr-maroon: #61122f;
+    --clr-light-maroon: #951C49;
+    --clr-deep-maroon: #3f0c1f;
+    --clr-green: #557c3e;
+    --clr-yellow: #f6b319;
+    --clr-light-grey: #e7e7e7;
+}
+
+body{
+    font-size:16px;
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+}
+
+/* Header */
+#header-nav{
+    background-color: #999999;
+    border: 2px solid black;
+    border-radius: 0; 
+    padding: 10px 0px;
+}
+
+.navbar-brand a{
+    text-decoration: none;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.navbar-brand h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size:1.6em;
+    color: black;
+}
+
+.navbar-header button.navbar-toggle{
+    border:1px solid black;
+} 
+.navbar-header .icon-bar{
+    border:2px solid black;
+}
+
+
+#nav-list{
+    background:white;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#nav-list a{
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 3px solid green;
+}
+#nav-list a:first-child, a:nth-child(2)
+{
+    border-bottom: 1px solid black; 
+}
+
+#nav-list a span{
+    font-size: 1.3em;
+    font-weight: bold;
+    color : black;
+   
+}
+
+/* Home page*/
+
+#main-content h2{
+    font-weight: bold;
+}
+
+#main-content section{
+    box-sizing: border-box;
+    margin-bottom:20px;
+}
+#chicken, #beef, #sushi{
+    background: #999999;
+    padding:10px 25px;
+}
+
+#chicken h3, #beef h3 , #sushi h3{
+    font-weight: bold;
+}
+
+@media (min-width:768px) {    
+    #main-content #sushi{
+        margin-bottom:20px;
+    }
+    
+  }
+
+@media (max-width:767px) {
+  
+    #header-nav{
+        padding:0;
+    }
+    #nav-list{
+        margin-bottom:0;
+    }
+    #main-content #sushi{
+        margin-bottom:20px;
+    }
+  
+}
